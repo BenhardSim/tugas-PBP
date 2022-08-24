@@ -1,0 +1,51 @@
+
+/* membuat posisi form berada di tengah */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD8A9;
+    font-family:Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+ul{
+    /* menghapus padding default */
+    padding: 0%;
+}
+
+li{
+    /* menghilangkan titik pada list */
+    list-style: none;
+}
+
+input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+    background-color: #319DA0;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#container{
+    /* membuat posisi text berada di tengah */
+    text-align: center;
+
+    /* memberi space antara garis dengan isi form */
+    padding: 30px;
+
+    /* membuat sudut form melingkar */
+    border-radius: 20px;
+
+    /* membuat warna latar belakang putih */
+    background-color: #FDEEDC;
+
+    /* membuat posisi berada di tengah */
+    margin-top: 10%;
+}
