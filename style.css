@@ -19,8 +19,12 @@ li{
     list-style: none;
     margin: 12px;
     background-color: #FFF38C;
-    padding: 10px;
+    padding: 6px;
+    padding-left: 30px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 input{
@@ -51,17 +55,22 @@ button{
     background-color: #FDEEDC;
 
     /* membuat posisi berada di tengah */
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 #warning{
     background-color: red;
     color: white;
     border-radius: 6px;
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 
 
 #warning p{
     padding: 3px;
+}
+
+#remove{
+    background-color: red;
 }
