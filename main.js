@@ -11,4 +11,7 @@ function addActivity(){
 
     // memasukkan element baru yang dibuat kedalam element dengan ID list-action
     document.getElementById("list-action").appendChild(newList);
+
+    // menghilangkan text pada tag input
+    document.getElementById("kegiatan").value = '';    
 }
