@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- import file css -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- import file js -->
+        <script src="./main.js"></script>
+        <title>Tugas PBP</title>
+    </head> 
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- import file css -->
-    <link rel="stylesheet" href="./style.css">
-    <!-- import file js -->
-    <script src="./main.js"></script>
-    <title>Tugas PBP</title>
-</head>
-
-<body>
-
-    <div id="container">
-        <h1>Tugas Kelompok PBP</h1>
-        <h2 id="title">To do List</h2>
-        <div id="warning">
-            <p>
-                Kegiatan tidak boleh kosong !!
-            </p>
+    <body>
+        <div id="container">
+            <h1>Tugas Kelompok PBP !!</h1>
+            <h2 id="title">To do List</h2>
+            <div id="warning">
+                <p>Kegiatan tidak boleh kosong !!</p>
+            </div>
+            <div id="success">
+                <p>Kegiatan berhasil ditambahkan</p>
+            </div>
+            <div id="Delete">
+                <p>Kegiatan berhasil dihapus</p>
+            </div>
+            <div id="DeleteAll">
+                <p>Semua Kegiatan berhasil dihapus</p>
+            </div>
+            <input
+                placeholder="isi kegiatan anda..."
+                type="text"
+                id="kegiatan"
+            />
+            <button onclick="addActivity()">Add</button> <button id= "removeAll" onclick="remAllElmt()">Remove All</button>
+            <ul id="list-action">
+                <li>
+                    Makan siang
+                    <button
+                        id="remove"
+                        onclick="remElmt(this)"
+                        onmouseover="btnhover()"
+                    >
+                        remove
+                    </button>
+                </li>
+                <li>
+                    Cuci baju
+                    <button id="remove" onclick="remElmt(this)">remove</button>
+                </li>
+            </ul>
         </div>
-        <div id="success">
-            <p>
-                Kegiatan berhasil ditambahkan
-            </p>
-        </div>
-        <input placeholder="isi kegiatan anda..." type="text" id="kegiatan">
-        <button onclick="addActivity()">Add</button>
-        <ul id="list-action">
-            <li>Makan siang <button id="remove" onclick="remElmt(this)" onmouseover="btnhover()">remove</button></li>
-            <li>Cuci baju <button id="remove" onclick="remElmt(this)">remove</button></li>
-        </ul>
-    </div>
-</body>
-
+    </body>
 </html>
