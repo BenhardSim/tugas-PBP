@@ -42,13 +42,19 @@ function welcome() {
     contents.removeAttribute("hidden");
 }
 
+function welcome() {
+    alert("Selamat Datang di To Do List Sederhana");
+    const contents = document.getElementById("container");
+    contents.removeAttribute("hidden");
+}
+
 // fungsi bekerja pada saat tombol add di tekan
 function addActivity() {
     // mengambil nilai yang ditulis dalam tag input
     var val = document.getElementById("kegiatan").value;
 
     // mengecek apakah isi input kosong atau tidak
-    if (val === '') {
+    if (val === "") {
         // menampilkan notif warning
         document.getElementById("warning").style.display = "block";
         // menghilangkan notif success
@@ -69,18 +75,20 @@ function addActivity() {
         // dalam element input
         newList.innerHTML = val;
         // membuat text dari button berubah menjadi "remove"
-        newBtn.innerHTML = "remove"
+        newBtn.innerHTML = "remove";
         // menambahkan atribute id pada button dan mengisi atribut tersebut dengan 'remove'
+
         newBtn.setAttribute('id', 'remove');
 
-        // menambahkakn event listener click pada tombol remove dan 
+        // menambahkakn event listener click pada tombol remove dan
         //  membuang list yang dibuat apabila button di click
         newBtn.addEventListener('click', function () {
             newList.remove()
 
             //menghilangkan notifikasi delete 1 elemen
             document.getElementById("Delete").style.display = "block";
-        });
+        })
+
 
         // memasukkan element baru yang dibuat kedalam element dengan ID list-action
         document.getElementById("list-action").appendChild(newList);
@@ -89,7 +97,7 @@ function addActivity() {
         newList.appendChild(newBtn);
 
         // menghilangkan text pada tag input
-        document.getElementById("kegiatan").value = '';
+        document.getElementById("kegiatan").value = "";
 
         // menghilangkan warning
         document.getElementById("warning").style.display = "none";
@@ -100,7 +108,7 @@ function addActivity() {
         //menghilangkan notifikasi delete 1 elemen
         document.getElementById("Delete").style.display = "none";
     }
-
 }
 
 window.addEventListener("load", welcome());
+
