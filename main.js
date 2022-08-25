@@ -87,6 +87,15 @@ function addActivity() {
 
             //menghilangkan notifikasi delete 1 elemen
             document.getElementById("Delete").style.display = "block";
+
+            //menghilangkan warning
+            document.getElementById("warning").style.display = "none";
+
+            //menghilangkan notifikasi sukses
+            document.getElementById("success").style.display = "none";
+
+            //menghilangkan warning
+            document.getElementById("warning").style.display = "none";
         })
 
 
@@ -111,4 +120,3 @@ function addActivity() {
 }
 
 window.addEventListener("load", welcome());
-
