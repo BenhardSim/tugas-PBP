@@ -39,7 +39,11 @@ button{
     color: white;
     padding: 10px;
     border-radius: 10px;
+    
 }
+
+button:hover{background-color: blue;}
+button:focus{background-color: red;}
 
 #container{
     /* membuat posisi text berada di tengah */
@@ -66,6 +70,13 @@ button{
     display: none;
 }
 
+#success{
+    background-color: lightgreen;
+    color: black;
+    border-radius: 6px;
+    /* visibility: hidden; */
+    display: none;
+}
 
 #warning p{
     padding: 3px;
@@ -74,3 +85,6 @@ button{
 #remove{
     background-color: red;
 }
+
+#remove:hover{background-color: brown;}
+#remove:focus{background-color: black;}
