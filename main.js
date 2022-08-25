@@ -12,7 +12,11 @@ function addActivity() {
     // mengecek apakah isi input kosong atau tidak
     if (val === '') {
         document.getElementById("warning").style.display = "block";
+
+        document.getElementById("success").style.display = "none";
     } else {
+        // notifikasi sukses
+        document.getElementById("success").style.display = "block";
         // membuat element list baru
         var newList = document.createElement("li");
         // membuat element button baru
