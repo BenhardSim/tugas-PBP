@@ -1,3 +1,10 @@
+// Anggota Kelompok :
+// Benhard Simanullang - 24060120140136
+// Charisto Marc Gybran - 24060120140133
+// Sabdiel Tarigan - 24060120120028
+// Julius Adrian - 24060120130127
+// Andira Faqih Muhammad - 24060120140142
+
 // fungsi untuk menghapus list contoh
 function remElmt(el) {
     var element = el;
@@ -66,6 +73,7 @@ function addActivity() {
     } else {
         // notifikasi sukses
         document.getElementById("success").style.display = "block";
+
         // membuat element list baru
         var newList = document.createElement("li");
         // membuat element button baru
@@ -77,7 +85,6 @@ function addActivity() {
         // membuat text dari button berubah menjadi "remove"
         newBtn.innerHTML = "remove";
         // menambahkan atribute id pada button dan mengisi atribut tersebut dengan 'remove'
-
         newBtn.setAttribute('id', 'remove');
 
         // menambahkakn event listener click pada tombol remove dan
