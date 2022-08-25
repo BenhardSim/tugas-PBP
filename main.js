@@ -11,8 +11,9 @@ function addActivity() {
 
     // mengecek apakah isi input kosong atau tidak
     if (val === '') {
+        // menampilkan notif warning
         document.getElementById("warning").style.display = "block";
-
+        // menghilangkan notif succes
         document.getElementById("success").style.display = "none";
     } else {
         // notifikasi sukses

@@ -42,9 +42,6 @@ button{
     
 }
 
-button:hover{background-color: blue;}
-button:focus{background-color: red;}
-
 #container{
     /* membuat posisi text berada di tengah */
     text-align: center;
@@ -82,9 +79,11 @@ button:focus{background-color: red;}
     padding: 3px;
 }
 
+#success p{
+    padding: 3px;
+}
+
 #remove{
     background-color: red;
 }
 
-#remove:hover{background-color: brown;}
-#remove:focus{background-color: black;}
